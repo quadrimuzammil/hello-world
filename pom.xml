@@ -23,19 +23,16 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
-    <repository>
+    
+         <repository>
              <id>nexus</id>
              <url>http://43.204.37.33:8081/repository/hello-release-repo</url>
-    </repository>
-    <snapshotRepository>
+         </repository>
+        
+         <snapshotRepository>
              <id>nexus</id>
              <url>http://43.204.37.33:8081/repository/hello-world-snapshot-repo</url>
-    </snapshotRepository>
+        </snapshotRepository>
    </distributionManagement>
 
   <build>
