@@ -20,7 +20,7 @@
    <repositories>
       <repository>
                <id>nexus</id>
-               <ur>http://43.204.37.33:8081/repository/remote-hello-repo</url>
+               <url>http://43.204.37.33:8081/repository/remote-hello-repo</url>
       </repository>
    </repositories>
   <modules>
