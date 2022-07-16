@@ -23,17 +23,18 @@
   </modules>
 
   <distributionManagement>
-    
-         <repository>
+       <repository>
              <id>nexus</id>
+             <name>FLIPKART</name>
              <url>http://43.204.37.33:8081/repository/hello-release-repo</url>
          </repository>
         
          <snapshotRepository>
              <id>nexus</id>
+             <name>FLIPKART</name>
              <url>http://43.204.37.33:8081/repository/hello-world-snapshot-repo</url>
         </snapshotRepository>
-   </distributionManagement>
+ </distributionManagement>
 
   <build>
     <plugins>
