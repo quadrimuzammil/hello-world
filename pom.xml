@@ -14,8 +14,15 @@
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+    <sonar.host.url>http://13.127.184.159:9000</sonar.host.url>
+    <sonar.login>2949d58d6e36aec5eb26eacb9ccd72782e613abd</sonar.login>
   </properties>
-
+   <repositories>
+      <repository>
+               <id>nexus</id>
+               <ur>http://43.204.37.33:8081/repository/remote-hello-repo</url>
+      </repository>
+   </repositories>
   <modules>
     <module>server</module>
     <module>webapp</module>
@@ -27,7 +34,8 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
-  </distributionManagement>
+           
+   </distributionManagement>
 
   <build>
     <plugins>
