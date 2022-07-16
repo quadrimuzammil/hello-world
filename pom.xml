@@ -6,7 +6,7 @@
   <groupId>com.example.maven-project</groupId>
   <artifactId>maven-project</artifactId>
   <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>Maven Project</name>
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
@@ -17,12 +17,6 @@
     <sonar.host.url>http://13.127.184.159:9000</sonar.host.url>
     <sonar.login>2949d58d6e36aec5eb26eacb9ccd72782e613abd</sonar.login>
   </properties>
-   <repositories>
-      <repository>
-               <id>nexus</id>
-               <url>http://43.204.37.33:8081/repository/remote-hello-repo</url>
-      </repository>
-   </repositories>
   <modules>
     <module>server</module>
     <module>webapp</module>
@@ -34,7 +28,14 @@
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
-           
+    <repository>
+             <id>nexus</id>
+             <url>http://43.204.37.33:8081/repository/hello-release-repo</url>
+    </repository>
+    <snapshotrepository>
+             <id>nexus</id>
+             <url>http://43.204.37.33:8081/repository/hello-world-snapshot-repo</url>
+    </snapshotrepository>
    </distributionManagement>
 
   <build>
