@@ -10,7 +10,8 @@
   <name>Maven Project</name>
   <description>Sample Maven project with a working, deployable site.</description>
   <url>http://www.example.com</url>
-   <repositories>
+  <!--
+     <repositories>
        <repository>
                 <id>nexus</id>
                 <url>http://65.2.141.88:8081/repository/zi-remote-repo/</url>
@@ -23,7 +24,7 @@
         <version>1.0.0</version>
      </dependency>
   </dependencies>
-         
+-->         
          
   <properties>
     <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
